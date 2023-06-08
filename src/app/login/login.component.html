@@ -1,0 +1,25 @@
+<div class="">
+    <div class="bg-gray-600">
+        <h1 class="font-bold text-3xl ml-10 p-2 text-gray-50">TekGain</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+                <div class="text-center mt-10">
+                    <h1 class="text-center text-gray-50 font-bold text-2xl mb-2">Login</h1>
+                </div>
+                <form [formGroup]="loginForm" (ngSubmit)="login()">
+                    <div class="mb-3 text-center">
+                      <label for="exampleInputEmail1" class="form-label">Username</label><br>
+                      <input type="email" class="form-control" formControlName="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
+                    </div>
+                    <div class="mb-3 text-center">
+                      <label for="exampleInputPassword1" class="form-label">Password</label><br>
+                      <input type="password" class="form-control" formControlName="password" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="ml-auto mr-auto text-center">
+                        <button type="submit" class="btn bg-blue-600 p-2 mb-2 text-center text-gray-50 font-semibold rounded-md">Sign in</button>
+                    </div>
+                  </form>
+        </div>
+    </div>
+</div>
